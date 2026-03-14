@@ -35,7 +35,7 @@ http://localhost:5173/
 Open that URL in your browser to view the site.
 
 
-##Shut Down the Site Safely##
+## Shut Down the Site Safely
 
 To stop the local development server:
 click into the terminal where npm run dev is running
@@ -52,7 +52,7 @@ and press Enter.
 This only stops the local server. It does not delete or damage any project files.
 
 
-##Build for Production##
+## Build for Production
 
 Create an optimized production build:
 
@@ -63,7 +63,7 @@ npm run build
 This generates a dist/ folder with the production-ready site files.
 
 
-##Preview the Production Build Locally##
+## Preview the Production Build Locally
 
 To preview the built version locally:
 
