@@ -13,7 +13,7 @@ const projects = [
     tags: ["Python", "SQL", "REST APIs", "CRUD", "Database Design"],
     image: PROJECT_1,
     githubUrl: "https://github.com/MaxW125/mountory-inventory",
-    liveUrl: "",
+    liveUrl: "https://mountory-inventory.vercel.app/",
   },
   {
     title: "Interactive Chess Engine",
