@@ -50,6 +50,7 @@ const AuthenticatedApp = () => {
 function App() {
   return (
     <Router
+      basename="/Portfolio"
       future={{
         v7_startTransition: true,
         v7_relativeSplatPath: true,
