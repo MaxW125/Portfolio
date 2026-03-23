@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import ABOUT_IMG from "../../assets/portfolio/about.JPG";
+import ABOUT_IMG from "../../assets/portfolio/about.jpg";
 
 const skills = [
   "Python",
