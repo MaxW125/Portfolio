@@ -7,6 +7,15 @@ import PROJECT_3 from "../../assets/portfolio/project-3.png";
 
 const projects = [
   {
+    title: "Bobcat Plus",
+    description:
+      "A Chrome extension that scrapes Banner (course registration) and DegreeWorks (degree audit) to show remaining degree requirements, open course sections, and builds conflict-free schedules using a deterministic CSP solver with LLM-powered intent, affinity, and rationale stages.",
+    tags: ["JavaScript", "Chrome Extension MV3", "OpenAI API", "CSP Solver", "Banner/DegreeWorks APIs"],
+    image: PROJECT_3,
+    githubUrl: "https://github.com/BobcatPlus/BobcatPlus",
+    liveUrl: "",
+  },
+  {
     title: "Inventory Tracker",
     description:
       "Full-stack inventory tracking application built to manage products and data reliably from end to end. Designed with REST APIs, CRUD functionality, and a normalized relational database schema to support data integrity and performance.",
@@ -22,15 +31,6 @@ const projects = [
     tags: ["Java", "Game Logic", "HTML/CSS", "Algorithms"],
     image: PROJECT_2,
     githubUrl: "https://github.com/MaxW125/ChessChamps",
-    liveUrl: "",
-  },
-  {
-    title: "More Projects Coming Soon",
-    description:
-      "I’m actively working on expanding this portfolio with additional software engineering projects. Future work will focus on backend development, databases, APIs, and practical full-stack applications.",
-    tags: [],
-    image: PROJECT_3,
-    githubUrl: "",
     liveUrl: "",
   },
 ];
