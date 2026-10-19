@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { certs } from "@/components/portfolio/CertsSection";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,6 +17,7 @@ export default function Navbar() {
     { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
     { label: "Experience", href: "#experience" },
+    ...(certs.length > 0 ? [{ label: "Certs", href: "#certs" }] : []),
     { label: "Contact", href: "#contact" },
   ];
 

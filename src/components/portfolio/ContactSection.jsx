@@ -59,7 +59,7 @@ export default function ContactSection() {
                 Get In Touch
               </h2>
               <p className="text-white/40 leading-relaxed mb-10">
-                I’m currently seeking software engineering opportunities and would be happy to connect about internships, entry-level roles, or technical projects. The best way to reach me is by email or LinkedIn.
+                I’m currently seeking software engineering opportunities and would be happy to connect about entry-level roles or technical projects. The best way to reach me is by email or LinkedIn.
               </p>
 
               <div className="space-y-6">
@@ -112,7 +112,7 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href="/resume.pdf"
+                  href="resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm text-white/30 hover:text-violet-400 transition-colors duration-300"

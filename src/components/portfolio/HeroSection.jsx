@@ -27,14 +27,16 @@ export default function HeroSection() {
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] tracking-tight">
             Max Westmoreland
-            </h1>
-            <br />
-            <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
-            Computer Science Student | Aspiring Software Engineer
-            </span>
-          
+          </h1>
+          <p className="mt-6 text-2xl md:text-3xl font-semibold bg-gradient-to-r from-violet-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+            Software Engineer
+          </p>
+          <p className="mt-3 text-white/40 text-sm tracking-wide">
+            B.S. Computer Science, Texas State University · Aug 2026
+          </p>
+
           <p className="mt-8 text-white/50 text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
-            I build full-stack, frontend, and interactive software projects focused on clean design and real functionality.
+            I build AI tools, cloud backends, and software that holds up when something goes wrong.
           </p>
         </motion.div>
 

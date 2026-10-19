@@ -1,38 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
-import { GraduationCap } from "lucide-react";
 
 const experiences = [
-  {
-    role: "Inventory Tracker",
-    company: "Full-Stack Web Application",
-    period: "Academic Project",
-    iconType: "school",
-    description:
-      "Architected and developed a full-stack inventory tracking application using Python and SQL, implementing REST APIs, CRUD functionality, and a normalized relational database schema to support data integrity, reliability, and performance.",
-  },
-  {
-    role: "Interactive Chess Engine",
-    company: "Software Project",
-    period: "Academic Project",
-    iconType: "school",
-    description:
-      "Built a Java-based chess application using object-oriented programming to manage game state and piece behavior, including move validation for check, checkmate, stalemate, and castling, while improving runtime performance through algorithmic optimization.",
-  },
   {
     role: "Personal Shopper",
     company: "H-E-B",
     period: "2023 – Present",
-    iconType: "work",
     description:
       "Used internal inventory and order management systems in a fast-paced environment, collaborated across teams to resolve operational issues in real time, and maintained high accuracy while adapting to workflow bottlenecks during peak periods.",
   },
   {
-    role: "Cast-Member Attractions",
+    role: "Attractions Cast Member",
     company: "Disney College Program",
     period: "Jan 2023 – Jun 2023",
-    iconType: "work",
     description:
       "Operated complex systems in a highly regulated environment, followed strict procedures and safety standards, and coordinated with multiple groups to resolve live operational issues with minimal disruption.",
   },
@@ -74,17 +55,10 @@ export default function ExperienceSection() {
                 {/* Dot */}
                 <div className="relative flex-shrink-0 mt-1.5">
                   <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-violet-400/40 group-hover:bg-violet-500/10 transition-all duration-500">
-                    {exp.iconType === "school" ? (
-                      <GraduationCap
-                        size={16}
-                        className="text-white/40 group-hover:text-violet-400 transition-colors duration-500"
-                      />
-                    ) : (
-                      <Briefcase
-                        size={16}
-                        className="text-white/40 group-hover:text-violet-400 transition-colors duration-500"
-                      />
-                    )}
+                    <Briefcase
+                      size={16}
+                      className="text-white/40 group-hover:text-violet-400 transition-colors duration-500"
+                    />
                   </div>
                 </div>
 

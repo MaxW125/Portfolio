@@ -8,29 +8,38 @@ import PROJECT_3 from "../../assets/portfolio/project-3.png";
 const projects = [
   {
     title: "Bobcat Plus",
-    description:
-      "A Chrome extension that scrapes Banner (course registration) and DegreeWorks (degree audit) to show remaining degree requirements, open course sections, and builds conflict-free schedules using a deterministic CSP solver with LLM-powered intent, affinity, and rationale stages.",
-    tags: ["JavaScript", "Chrome Extension MV3", "OpenAI API", "CSP Solver", "Banner/DegreeWorks APIs"],
+    problem:
+      "Signing up for classes at Texas State means going back and forth between DegreeWorks and Banner. You figure out what you still need, then hunt for open sections that don't overlap.",
+    built:
+      "A Chrome extension that does that for you and builds a schedule from what's actually open. We were a team of four. I wrote the first version of the background script that pulls your degree audit, searches Banner for sections, and checks prereqs. Later I sped up the analysis by running the prereq checks in parallel and caching course descriptions, and I fixed bugs where saved calendar blocks disappeared on refresh or carried over between plans.",
+    result: "It's published on the Chrome Web Store for Texas State students.",
+    tags: ["JavaScript", "Chrome Extension (MV3)", "OpenAI API", "Banner / DegreeWorks"],
     image: PROJECT_3,
     githubUrl: "https://github.com/BobcatPlus/BobcatPlus",
     liveUrl: "",
   },
   {
-    title: "Inventory Tracker",
-    description:
-      "Full-stack inventory tracking application built to manage products and data reliably from end to end. Designed with REST APIs, CRUD functionality, and a normalized relational database schema to support data integrity and performance.",
-    tags: ["Python", "SQL", "REST APIs", "CRUD", "Database Design"],
+    title: "HosterWatch",
+    problem:
+      "A lot of site owners don't find out their domain is down or their cert expired until someone else tells them.",
+    built:
+      "A domain monitoring app that checks DNS, HTTPS, TLS cert expiry, and open ports on a schedule and emails you when something changes. When an incident opens, it asks Claude for a likely root cause so the alert tells you why, not just that it broke. Port scans only run after you prove you own the domain with a DNS TXT record.",
+    result: "Built with a team of three as our senior capstone and presented to faculty.",
+    tags: ["Node.js", "Express", "PostgreSQL", "React", "Claude API"],
     image: PROJECT_1,
-    githubUrl: "https://github.com/MaxW125/mountory-inventory",
-    liveUrl: "https://mountory-inventory.vercel.app/",
+    githubUrl: "https://github.com/Bluefrostbite8/capstone",
+    liveUrl: "",
   },
   {
-    title: "Interactive Chess Engine",
-    description:
-      "Desktop-based chess game built in Java using object-oriented programming to manage game state and piece behavior. Implemented move validation for check, checkmate, stalemate, and castling, while improving runtime performance through move-generation optimization.",
-    tags: ["Java", "Game Logic", "HTML/CSS", "Algorithms"],
+    title: "Zurg",
+    problem:
+      "I wanted to see if a team of AI agents could run a small print-on-demand store with me only approving things.",
+    built:
+      "A multi-agent system with separate agents for research, design, publishing, pricing, analytics, and support. The researcher picks a niche, the designer generates the art with Google Imagen, and once I approve it over WhatsApp the factory agent creates the product in Printify and lists it on Shopify and Etsy. The agents write nightly reports and I get a briefing every morning.",
+    result: "It runs on its own schedule and has listed products on both stores without me touching them.",
+    tags: ["Python", "FastAPI", "Claude API", "Google Imagen", "Shopify / Etsy APIs"],
     image: PROJECT_2,
-    githubUrl: "https://github.com/MaxW125/ChessChamps",
+    githubUrl: "",
     liveUrl: "",
   },
 ];
@@ -89,9 +98,20 @@ export default function ProjectsSection() {
                 <h3 className="text-2xl md:text-3xl font-bold text-white mt-2 mb-4">
                   {project.title}
                 </h3>
-                <p className="text-white/50 leading-relaxed mb-6">
-                  {project.description}
-                </p>
+                <dl className="space-y-4 mb-6">
+                  {[
+                    ["Problem", project.problem],
+                    ["Built", project.built],
+                    ["Result", project.result],
+                  ].map(([label, text]) => (
+                    <div key={label}>
+                      <dt className="text-white/30 text-xs uppercase tracking-wider mb-1">
+                        {label}
+                      </dt>
+                      <dd className="text-white/50 leading-relaxed">{text}</dd>
+                    </div>
+                  ))}
+                </dl>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map((tag) => (
                     <span
