@@ -39,7 +39,7 @@ const projects = [
     result: "It runs on its own schedule and has listed products on both stores without me touching them.",
     tags: ["Python", "FastAPI", "Claude API", "Google Imagen", "Shopify / Etsy APIs"],
     image: PROJECT_2,
-    githubUrl: "",
+    githubUrl: "https://github.com/MaxW125/zurg",
     liveUrl: "",
   },
 ];
