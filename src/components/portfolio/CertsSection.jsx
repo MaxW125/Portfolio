@@ -5,12 +5,12 @@ import { Award, ArrowUpRight } from "lucide-react";
 // The section and its navbar link stay hidden while this list is empty.
 // Fill in date (e.g. "Nov 2026") and url (Credly badge link) when you have them.
 export const certs = [
-  {
-    name: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services",
-    date: "",
-    url: "",
-  },
+  // {
+  //   name: "AWS Certified Solutions Architect – Associate",
+  //   issuer: "Amazon Web Services",
+  //   date: "",
+  //   url: "",
+  // },
 ];
 
 export default function CertsSection() {

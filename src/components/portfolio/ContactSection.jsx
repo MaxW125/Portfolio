@@ -102,7 +102,7 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/max-westmoreland-834570226"
+                  href="https://www.linkedin.com/in/maxwestmoreland"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm text-white/30 hover:text-violet-400 transition-colors duration-300"
@@ -162,7 +162,7 @@ export default function ContactSection() {
                     onChange={(e) =>
                       setForm({ ...form, message: e.target.value })
                     }
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell me about the role or what you’d like to discuss"
                     rows={5}
                     className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-violet-400/50 rounded-xl resize-none"
                   />

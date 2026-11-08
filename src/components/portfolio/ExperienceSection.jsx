@@ -4,18 +4,18 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Personal Shopper",
-    company: "H-E-B",
-    period: "2023 – Present",
+    role: "Software Engineer",
+    company: "Drivia",
+    period: "Jun 2026 – Present",
     description:
-      "Used internal inventory and order management systems in a fast-paced environment, collaborated across teams to resolve operational issues in real time, and maintained high accuracy while adapting to workflow bottlenecks during peak periods.",
+      "Develop new features across the company's SaaS products using Python, React, and PostgreSQL. Audit and refactor AI-generated codebases to improve security, reliability, and maintainability, and fix security vulnerabilities like missing auth checks and unvalidated inputs.",
   },
   {
-    role: "Attractions Cast Member",
-    company: "Disney College Program",
-    period: "Jan 2023 – Jun 2023",
+    role: "Personal Shopper",
+    company: "H-E-B",
+    period: "Aug 2023 – Present",
     description:
-      "Operated complex systems in a highly regulated environment, followed strict procedures and safety standards, and coordinated with multiple groups to resolve live operational issues with minimal disruption.",
+      "Use internal systems to track orders, validate item availability, and maintain data accuracy in a high-volume environment. Identify workflow inefficiencies during peak periods and work with the team to reduce bottlenecks.",
   },
 ];
 

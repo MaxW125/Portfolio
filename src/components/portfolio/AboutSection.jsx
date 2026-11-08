@@ -6,7 +6,11 @@ import ABOUT_IMG from "../../assets/portfolio/about.jpg";
 const skillGroups = [
   {
     label: "Languages",
-    skills: ["Python", "JavaScript", "Java", "SQL"],
+    skills: ["Python", "JavaScript", "TypeScript", "Java", "SQL"],
+  },
+  {
+    label: "Frameworks",
+    skills: ["React", "FastAPI"],
   },
   {
     label: "Cloud",
@@ -62,8 +66,9 @@ export default function AboutSection() {
               extension that plans your class schedule, a tool that watches domains and explains why
               they went down, and a set of agents that run an online store on their own. I like the
               backend side the most: getting the data right, wiring up the APIs, and making it all
-              run without me watching it. Right now I'm studying for the AWS Solutions Architect
-              exam and looking for my first full-time software engineering job.
+              run without me watching it. Right now I'm a software engineer at Drivia, where I
+              clean up and secure AI-generated codebases and build new features. I'm also studying for
+              the AWS Solutions Architect exam and looking for my first full-time software engineering job.
             </p>
 
             {/* Skills */}

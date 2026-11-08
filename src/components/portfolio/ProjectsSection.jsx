@@ -36,8 +36,8 @@ const projects = [
       "I wanted to see if a team of AI agents could run a small print-on-demand store with me only approving things.",
     built:
       "A multi-agent system with separate agents for research, design, publishing, pricing, analytics, and support. The researcher picks a niche, the designer generates the art with Google Imagen, and once I approve it over WhatsApp the factory agent creates the product in Printify and lists it on Shopify and Etsy. The agents write nightly reports and I get a briefing every morning.",
-    result: "It runs on its own schedule and has listed products on both stores without me touching them.",
-    tags: ["Python", "FastAPI", "Claude API", "Google Imagen", "Shopify / Etsy APIs"],
+    result: "It runs on its own schedule, lists products on both stores without me touching them, and brings in about $500 a month.",
+    tags: ["Python", "FastAPI", "Claude API", "Ollama", "RAG", "Google Imagen", "Shopify / Etsy APIs"],
     image: PROJECT_3,
     githubUrl: "https://github.com/MaxW125/zurg",
     liveUrl: "",
